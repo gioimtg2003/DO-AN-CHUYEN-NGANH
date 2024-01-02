@@ -1,5 +1,5 @@
 
-var mongoose = require("../Config/Database").mongoose;
+var mongoose = require("../../Config/Database").mongoose;
 var m = require("mongoose").Schema;
 var Shop_Owner = new mongoose.Schema({
     User_Name: {
