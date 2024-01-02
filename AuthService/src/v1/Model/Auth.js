@@ -1,6 +1,7 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-var Shop_Owner = new Schema({
+
+var mongoose = require("../Config/Database").mongoose;
+var m = require("mongoose").Schema;
+var Shop_Owner = new mongoose.Schema({
     User_Name: {
         type: String,
         required: true
@@ -22,3 +23,6 @@ var Shop_Owner = new Schema({
         required: true
     }
 });
+module.exports = {
+    AuthSchema :  mongoose.model("shop_owner_auths", Shop_Owner)
+}
